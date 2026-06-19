@@ -1,19 +1,19 @@
 let modInfo = {
-	name: "Cool Tree",
+	name: "Fragment Tree",
 	author: "Zenith",
-	pointsName: "Trees",
+	pointsName: "Fragments",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	offlineLimit: 10,  // In hours
 }
 
 // Set your version in num and name
 let VERSION = {
-	num: "6.0",
-	name: "Tree",
+	num: "1.0",
+	name: "Shards",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
@@ -42,9 +42,8 @@ function getPointGen() {
 		return new Decimal(0)
 	
 	let gain = new Decimal(1)
-	if (hasUpgrade('p', 11)) gain = gain.times(2)
-	if(hasUpgrade('p', 12)) gain = gain.times(upgradeEffect('p', 12))
-		
+	if(hasUpgrade('p', 11)) gain = gain.times(2)
+	if(hasUpgrade('p', 12)) gain = gain.times(upgradeEffect("p", 12))
 	return gain
 }
 
