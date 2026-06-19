@@ -1,7 +1,7 @@
 let modInfo = {
-	name: "The Hyperoperation Tree",
+	name: "Cool Tree",
 	author: "Zenith",
-	pointsName: "points",
+	pointsName: "Trees",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -12,8 +12,8 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Addition",
+	num: "6.0",
+	name: "Tree",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
